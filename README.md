@@ -1,6 +1,6 @@
 # Docker Build Action
 
-[![GitHub release](https://img.shields.io/github/v/release/Boutros-Lab-SBP/tool-create-release)](https://github.com/Boutros-Lab-SBP/tool-create-release/actions/workflows/internal-prepare.yaml)
+[![GitHub release](https://img.shields.io/github/v/release/Boutros-Lab-SBP/tool-Docker-action)](https://github.com/Boutros-Lab-SBP/tool-Docker-action/actions/workflows/internal-prepare.yaml)
 
 An Action to automatically build and push images to the [GitHub Container registry](https://github.com/features/packages).
 
