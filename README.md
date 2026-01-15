@@ -1,6 +1,6 @@
 # Docker Build Action
 
-[![GitHub release](https://img.shields.io/github/v/release/Boutros-Lab-SBP/tool-Docker-action)](https://github.com/Boutros-Lab-SBP/tool-Docker-action/actions/workflows/prepare-release.yaml)
+[![GitHub release](https://img.shields.io/github/v/release/TheBoutrosLab/tool-Docker-action)](https://github.com/TheBoutrosLab/tool-Docker-action/actions/workflows/prepare-release.yaml)
 
 An Action to automatically build and push images to the [GitHub Container registry](https://github.com/features/packages).
 
@@ -56,7 +56,7 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: uclahs-cds/tool-Docker-action@v2
+      - uses: TheBoutrosLab/tool-Docker-action@v2
 ```
 
 The complicated `run-name` logic above controls the workflow run names listed on the Actions page:

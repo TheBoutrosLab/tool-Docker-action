@@ -12,4 +12,4 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Release management workflows
 
-[2.3.0]: https://github.com/Boutros-Lab-SBP/tool-Docker-action/releases/tag/v2.3.0
+[2.3.0]: https://github.com/TheBoutrosLab/tool-Docker-action/releases/tag/v2.3.0
