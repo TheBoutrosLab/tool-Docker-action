@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Multi-platform builds including `linux/amd64` and `linux/arm64`
+
 ### Changed
 
 - Update org to `TheBoutrosLab`
