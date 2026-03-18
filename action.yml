@@ -64,7 +64,7 @@ runs:
     - name: Create tags
       if: github.event_name != 'delete'
       id: meta
-      uses: docker/metadata-action@v5
+      uses: docker/metadata-action@v6
       with:
         flavor: |
           latest=false
