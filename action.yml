@@ -26,6 +26,9 @@ inputs:
   non-semver-tags:
     description: 'If set to any value, build all tags beginning with v'
     default: ''
+  platforms:
+    description: 'Comma-separated list of target platforms to build'
+    default: 'linux/amd64,linux/arm64'
 
 runs:
   using: "composite"
@@ -97,7 +100,7 @@ runs:
       if: github.event_name != 'delete'
       uses: docker/build-push-action@v7
       with:
-        platforms: linux/amd64,linux/arm64
+        platforms: ${{ inputs.platforms }}
         context: ${{ inputs.context }}
         push: true
         tags: ${{ steps.meta.outputs.tags }}
