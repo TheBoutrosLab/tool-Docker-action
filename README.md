@@ -79,6 +79,16 @@ The complicated `run-name` logic above controls the workflow run names listed on
 | `context` | `.` | The docker build context. Only required if the `Dockerfile` is not in the repository root. |
 | `file` | `''` | The Dockerfile to build. The default (empty string) is treated as `${context}/Dockerfile`. |
 | `non-semver-tags` | -- | If set to a non-empty string, non-SemVer tags will be recognized. |
+| `platforms` | `linux/amd64,linux/arm64` | Comma-separated list of target platforms to build. Use a narrower list for software that is unavailable on some architectures. |
+
+To build only one platform:
+
+```yaml
+steps:
+  - uses: TheBoutrosLab/tool-Docker-action@v2
+    with:
+      platforms: linux/amd64
+```
 
 ## License
 
