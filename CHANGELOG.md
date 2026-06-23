@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- Replace all occurrences of `/` in branch names with `-` to match generated tag
+
 ## [2.7.0] - 2026-06-23
 
 ### Changed
