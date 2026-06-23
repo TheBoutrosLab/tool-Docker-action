@@ -8,6 +8,10 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [2.7.0] - 2026-06-23
 
+### Changed
+
+- Bump `checkout` action to `v7`
+
 ## [2.6.0] - 2026-05-26
 
 ### Changed
