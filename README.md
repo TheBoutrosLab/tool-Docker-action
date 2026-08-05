@@ -77,6 +77,7 @@ The complicated `run-name` logic above controls the workflow run names listed on
 | `github-token` | `github.token`  | Token used for authentication. Requires `contents: read` for the calling repository and `packages:write` for the host organization. |
 | `custom-tags` | -- | Additional lines to add to the [docker/metadata-action `tags` argument](https://github.com/docker/metadata-action?tab=readme-ov-file#tags-input). |
 | `context` | `.` | The docker build context. Only required if the `Dockerfile` is not in the repository root. |
+| `build-args` | -- | Newline-separated values passed to the [docker/build-push-action `build-args` input](https://github.com/docker/build-push-action#customizing). |
 | `file` | `''` | The Dockerfile to build. The default (empty string) is treated as `${context}/Dockerfile`. |
 | `non-semver-tags` | -- | If set to a non-empty string, non-SemVer tags will be recognized. |
 | `platforms` | `linux/amd64,linux/arm64` | Comma-separated list of target platforms to build. Use a narrower list for software that is unavailable on some architectures. |
@@ -88,6 +89,17 @@ steps:
   - uses: TheBoutrosLab/tool-Docker-action@v2
     with:
       platforms: linux/amd64
+```
+
+To pass Docker build arguments:
+
+```yaml
+steps:
+  - uses: TheBoutrosLab/tool-Docker-action@v2
+    with:
+      build-args: |
+        VERSION=1.2.3
+        ENABLE_FEATURE=true
 ```
 
 ## License
