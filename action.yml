@@ -20,6 +20,9 @@ inputs:
   context:
     description: 'Docker build context'
     default: '.'
+  build-args:
+    description: 'Newline-separated Docker build arguments'
+    default: ''
   file:
     description: 'Dockerfile to build. Defaults to ${context}/Dockerfile'
     required: false
@@ -105,6 +108,7 @@ runs:
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         file: ${{ inputs.file }}
+        build-args: ${{ inputs.build-args }}
 
     - if: github.event_name != 'delete'
       name: Log comment with image URL
